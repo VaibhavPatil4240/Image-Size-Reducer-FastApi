@@ -13,5 +13,6 @@
   <li>All the dependencies to run the system are included in the requirements.txt</li>
 </ol>
 <hr>
-To run the system First install all the dependencies using pip install -r requirements.txt</mark> <br> After that <mark>cd FastApi</mark> <br> then run <mark>uvicorn main:app</mark> <br> At last you can use upload.py to access API which takes image and returns compressed image
+To run the system First install all the dependencies using ```console
+pip install -r requirements.txt ``` <br> After that <mark>cd FastApi</mark> <br> then run <mark>uvicorn main:app</mark> <br> At last you can use upload.py to access API which takes image and returns compressed image
 
