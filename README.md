@@ -7,6 +7,9 @@
 </p>
 <ol>
   <li>This System uses Convolutional Neural Network to assess the image quality</li>
-  <li>Data set used for training <a href="https://live.ece.utexas.edu/research/quality/subjective.htm"> Live IQA DATASET</a>
+  <li>Data set used for training <a href="https://live.ece.utexas.edu/research/quality/subjective.htm"> Live IQA DATASET</a></li>
+  <li>Pretrained model is available in the directory FastApi/models
+  <li>All the dependencies to run the system are included in the requirements.txt</li>
 </ol>
-<p>All the dependencies are included in the requirements.txt</p>
+<p>To run the system First install all the dependencies using pip install -r requirements.txt <br> After that cd FastApi <br> then run uvicorn main:app <br> At last you can use upload.py to access API which takes image and returns compressed image.</p>
+
