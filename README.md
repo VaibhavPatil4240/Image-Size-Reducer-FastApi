@@ -23,6 +23,7 @@ cd FastAPI
 uvicorn main:app
 </code></pre>
 After the server starts you can use exposed API which takes Image using post method and returns compressed image as response.
+To upload the image run following command
 <pre><code>
 python upload.py
 </code></pre>
