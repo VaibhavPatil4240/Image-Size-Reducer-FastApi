@@ -9,3 +9,4 @@
   <li>This System uses Convolutional Neural Network to assess the image quality</li>
   <li>Data set used for training <a href="https://live.ece.utexas.edu/research/quality/subjective.htm"> Live IQA DATASET</a>
 </ol>
+<p>All the dependencies are included in the requirements.txt</p>
