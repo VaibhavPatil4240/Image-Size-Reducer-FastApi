@@ -11,5 +11,5 @@
   <li>Pretrained model is available in the directory FastApi/models
   <li>All the dependencies to run the system are included in the requirements.txt</li>
 </ol>
-<p>To run the system First install all the dependencies using pip install -r requirements.txt <br> After that cd FastApi <br> then run uvicorn main:app <br> At last you can use upload.py to access API which takes image and returns compressed image.</p>
+<p>To run the system First install all the dependencies using <mark>pip install -r requirements.txt</mark> <br> After that <mark>cd FastApi</mark> <br> then run <mark>uvicorn main:app</mark> <br> At last you can use upload.py to access API which takes image and returns compressed image.</p>
 
