@@ -18,3 +18,5 @@ pip install -r requirements.txt
 ` 
 After that cd FastApithen run uvicorn main:app At last you can use upload.py to access API which takes image and returns compressed image
 
+ `def myFunction([parameters]):`
+
