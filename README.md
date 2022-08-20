@@ -1,6 +1,30 @@
-#BRISQUE_IQA_Image_Size_Reducer
+<h1>Image Size Reducer</h1>
 
-All the required dependencies are mentioned in the requirements.txt.<br>
-Code uses python image-quality library. As of now its latest build is not available with pip (current one has a bug).<br>
-image-quality code can be found at: https://github.com/ocampor/image-quality
-
+<h2>This repository assesses the quality of the image and reduces the size using Jpeg Compression</h2>
+<h2>System Architecture</h2>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/54111420/185749898-6cdc882d-eb72-4e89-89f3-26a8679aeb9e.png" width="550" title="System Architecture">
+</p>
+<hr>
+<ol>
+  <li>This System uses Convolutional Neural Network to assess the image quality</li>
+  <li>Data set used for training <a href="https://live.ece.utexas.edu/research/quality/subjective.htm"> Live IQA DATASET</a></li>
+  <li>Pretrained model is available in the directory FastApi/models
+  <li>All the dependencies to run the system are included in the requirements.txt</li>
+</ol>
+<hr>
+Install All the dependencies using
+<pre><code>
+pip install -r requirements.txt 
+</code></pre>
+Then
+<pre><code>
+cd FastAPI
+uvicorn main:app
+</code></pre>
+After the server starts you can use exposed API which takes Image using post method and returns compressed image as response.
+<pre><code>
+python upload.py path_to_image or path_to_directory_of_images
+</code></pre>
+<hr>
+<h3>This System is deployed on Azure using Flask. You can access Image Size Reducer app <a href='https://image-size-reducer.azurewebsites.net/'>Here</a> and source code is <a href='https://image-size-reducer.azurewebsites.net/'>Here</a></h3>
