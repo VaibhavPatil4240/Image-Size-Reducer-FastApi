@@ -13,10 +13,18 @@
   <li>All the dependencies to run the system are included in the requirements.txt</li>
 </ol>
 <hr>
-To run the system First install all the dependencies using 
-`pip install -r requirements.txt` 
- `def myFunction([parameters]):`
-After that cd FastApithen run uvicorn main:app At last you can use upload.py to access API which takes image and returns compressed image
-
- `def myFunction([parameters]):`
-
+Install All the dependencies using
+<pre><code>
+pip install -r requirements.txt 
+</code></pre>
+Then
+<pre><code>
+cd FastAPI
+uvicorn main:app
+</code></pre>
+After the server starts you can use exposed API which takes Image using post method and returns compressed image as response.
+<pre><code>
+python upload.py path_to_image or path_to_directory_of_images
+</code></pre>
+<hr>
+<h3>This System is deployed on Azure using Flask. You can access Image Size Reducer app <a href='https://image-size-reducer.azurewebsites.net/'>Here</a> and source code is <a href='https://image-size-reducer.azurewebsites.net/'>Here</a></h3>
