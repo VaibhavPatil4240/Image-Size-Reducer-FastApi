@@ -2,7 +2,6 @@ import uvicorn
 from fastapi import File, UploadFile, FastAPI 
 from fastapi.responses import FileResponse
 import image_score
-import os
 app = FastAPI()
 
 @app.post("/upload")
@@ -19,7 +18,4 @@ async def upload(file: UploadFile = File(...)):
     return FileResponse(path="uploads/"+reduced_file, filename=reduced_file, media_type="image/jpg")
 
 if __name__ == '__main__':
-    if(not os.path.exists(os.getcwd+"/uploads")):
-        os.mkdir("uploads")
-    print("Here")
     uvicorn.run(app, host='0.0.0.0', port=8000)

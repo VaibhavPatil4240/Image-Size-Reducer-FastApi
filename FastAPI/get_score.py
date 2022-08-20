@@ -5,6 +5,7 @@ from torch import nn
 import torch.nn.functional as F
 from PIL import Image
 import numpy as np
+from os import mkdir,path,getcwd
 
 def LocalNormalization(patch, P=3, Q=3, C=1):
     kernel = np.ones((P, Q)) / (P * Q)
@@ -55,6 +56,8 @@ class CNNIQAnet(nn.Module):
 
 
 def getScore(img):
+    if(not path.exists(getcwd()+"/uploads")):
+        mkdir("uploads")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # device = torch.device("cpu")
     model = CNNIQAnet(ker_size=7,
