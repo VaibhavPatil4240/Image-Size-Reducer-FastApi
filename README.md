@@ -28,4 +28,4 @@ To upload the image run following command
 python upload.py
 </code></pre>
 <hr>
-<h3>This System is deployed on Azure using Flask. You can access deployed flask app <a href='https://image-size-reducer.azurewebsites.net/'>Here</a> and source code is <a href='https://github.com/VaibhavPatil4240/Image-Size-Reducer-Flask'>Here</a></h3>
+<h3>This System is deployed on Azure using Flask. You can access deployed flask app <a href='https://imagesizereducer.azurewebsites.net/'>Here</a> and source code is <a href='https://github.com/VaibhavPatil4240/Image-Size-Reducer-Flask'>Here</a></h3>
