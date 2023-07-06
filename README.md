@@ -25,7 +25,7 @@ uvicorn main:app
 After the server starts you can use exposed API which takes Image using post method and returns compressed image as response.
 To upload the image run following command
 <pre><code>
-python upload.py
+python uploadfile.py
 </code></pre>
 <hr>
 <h3>You can use flask web app with same system. Source code of flask app is here <a href='https://github.com/VaibhavPatil4240/Image-Size-Reducer-Flask'>Here</a></h3>
