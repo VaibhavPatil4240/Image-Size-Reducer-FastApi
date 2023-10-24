@@ -29,3 +29,4 @@ python uploadfile.py
 </code></pre>
 <hr>
 <h3>You can use flask web app with same system. Source code of flask app is here <a href='https://github.com/VaibhavPatil4240/Image-Size-Reducer-Flask'>Here</a></h3>
+<h3>Deployed Flask App<a href='https://image-size-reducer-intb.onrender.com/'>https://image-size-reducer-intb.onrender.com/</a></h3>
